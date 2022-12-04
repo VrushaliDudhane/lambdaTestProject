@@ -21,7 +21,7 @@ public class DataProviderForRegistration {
 		  XSSFWorkbook workbook = null;
 		  
 		  try {
-			fip=new FileInputStream("F:\\VrushaliTestingData\\CJCSelenium-20221122T035116Z-001\\CJCSelenium\\TaskFromMaheshSir\\LmbdaTestProject\\src\\test\\resources\\TestData\\RegistrationData.xlsx");
+			fip=new FileInputStream("src\\test\\resources\\TestData\\RegistrationData.xlsx");
 			workbook=new XSSFWorkbook(fip);
 		  } catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -33,12 +33,38 @@ public class DataProviderForRegistration {
 		
 		  if(m.getName().equalsIgnoreCase("providingValidRegistrationData"))
 			{
-			  sheet=workbook.getSheet("sheet1");
+			  sheet=workbook.getSheet("ValidRegistrationData");
 			}
 		  else if(m.getName().equalsIgnoreCase("providingblankUserName"))
 		  {
-			  sheet=workbook.getSheet("sheet2");
+			  sheet=workbook.getSheet("BlankUserName");
 		  }
+		  
+		  else if(m.getName().equalsIgnoreCase("providingblankEmail"))
+		  {
+			  sheet=workbook.getSheet("BlankBusinessEmail");
+		  }
+		  
+		  else if(m.getName().equalsIgnoreCase("providingRegisteredEmail"))
+		  {
+			  sheet=workbook.getSheet("RegisteredEmail");
+		  }
+		  
+		  else if(m.getName().equalsIgnoreCase("providingShortPassword"))
+		  {
+			  sheet=workbook.getSheet("PasswordNegative");
+		  }
+		  
+		  else if(m.getName().equalsIgnoreCase("providingBlankPhoneNumber"))
+		  {
+			  sheet=workbook.getSheet("BlankPhoneNumber");
+		  }
+		  
+		  else if(m.getName().equalsIgnoreCase("withoutAcceptingTerms"))
+		  {
+			  sheet=workbook.getSheet("ValidRegistrationData");
+		  }
+		  
 		  
 		  
 		

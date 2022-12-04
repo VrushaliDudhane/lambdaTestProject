@@ -5,14 +5,23 @@
   <test thread-count="5" parallel="tests" name="TestChrome">
   <parameter name="Browser" value="chrome"></parameter>
     <classes>
-      <class name="tests.RegisterPageTest"/>
+      <class name="tests.RegisterPageTest">
+        <methods>
+       <include name="withoutAcceptingTerms"></include>
+      </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
   
 <test thread-count="5" parallel="tests" name="TestFireFox">
   <parameter name="Browser" value="firefox"></parameter>
     <classes>
-      <class name="tests.RegisterPageTest"/>
+      <class name="tests.RegisterPageTest">
+       <methods>
+  
+       <include name="withoutAcceptingTerms"></include>
+      </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

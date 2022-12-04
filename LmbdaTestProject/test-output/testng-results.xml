@@ -1,173 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="16" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-01T20:51:30 IST" name="Suite" finished-at="2022-12-01T20:51:52 IST" duration-ms="22302">
+  <suite started-at="2022-12-02T21:24:39 IST" name="Default suite" finished-at="2022-12-02T21:24:46 IST" duration-ms="7080">
     <groups>
     </groups>
-    <test started-at="2022-12-01T20:51:30 IST" name="TestChrome" finished-at="2022-12-01T20:51:46 IST" duration-ms="15704">
-      <class name="tests.RegisterPageTest">
-        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@514646ef]" started-at="2022-12-01T20:51:31 IST" name="initRegisterPage" finished-at="2022-12-01T20:51:37 IST" duration-ms="6885" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-12-02T21:24:39 IST" name="Default test" finished-at="2022-12-02T21:24:46 IST" duration-ms="7080">
+      <class name="tests.FirstPageTest">
+        <test-method is-config="true" signature="initFirstPage()[pri:0, instance:tests.FirstPageTest@76494737]" started-at="2022-12-02T21:24:39 IST" name="initFirstPage" finished-at="2022-12-02T21:24:46 IST" duration-ms="6993" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initRegisterPage -->
-        <test-method signature="providingValidRegistrationData(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@514646ef]" started-at="2022-12-01T20:51:37 IST" name="providingValidRegistrationData" data-provider="RegistrationData" finished-at="2022-12-01T20:51:38 IST" duration-ms="1028" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
-  <main:c r="A1" t="s">
-    <main:v>0</main:v>
-  </main:c>
-  <main:c r="B1" s="1" t="s">
-    <main:v>1</main:v>
-  </main:c>
-  <main:c r="C1" t="s">
-    <main:v>2</main:v>
-  </main:c>
-  <main:c r="D1">
-    <main:v>123456789</main:v>
-  </main:c>
-</xml-fragment>]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- initFirstPage -->
+        <test-method signature="test1()[pri:0, instance:tests.FirstPageTest@76494737]" started-at="2022-12-02T21:24:46 IST" name="test1" finished-at="2022-12-02T21:24:46 IST" duration-ms="46" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: headless chrome=108.0.5359.72)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-6JUGJ4I', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08ba368a2cc6ee56b30acc619ea7c7ae, clickElement {id=d4b3a95b-1050-4793-9e95-62a276018f20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Sachin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60305/devtoo..., se:cdpVersion: 108.0.5359.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@1a21bc9a -> unknown locator]
+Session ID: 08ba368a2cc6ee56b30acc619ea7c7ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=108.0.5359.72)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-6JUGJ4I', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08ba368a2cc6ee56b30acc619ea7c7ae, clickElement {id=d4b3a95b-1050-4793-9e95-62a276018f20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Sachin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60305/devtoo..., se:cdpVersion: 108.0.5359.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@1a21bc9a -> unknown locator]
+Session ID: 08ba368a2cc6ee56b30acc619ea7c7ae
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pages.FirstPage.clickOnSignUp(FirstPage.java:29)
+at tests.FirstPageTest.test1(FirstPageTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- providingValidRegistrationData -->
-        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@514646ef]" started-at="2022-12-01T20:51:38 IST" name="tearDownRegisterPage" finished-at="2022-12-01T20:51:38 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownRegisterPage -->
-        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@514646ef]" started-at="2022-12-01T20:51:39 IST" name="initRegisterPage" finished-at="2022-12-01T20:51:45 IST" duration-ms="6080" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initRegisterPage -->
-        <test-method signature="providingblankUserName(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@514646ef]" started-at="2022-12-01T20:51:45 IST" name="providingblankUserName" data-provider="RegistrationData" finished-at="2022-12-01T20:51:46 IST" duration-ms="917" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
-  <main:c r="A1" t="s">
-    <main:v>3</main:v>
-  </main:c>
-  <main:c r="B1" s="1" t="s">
-    <main:v>1</main:v>
-  </main:c>
-  <main:c r="C1" t="s">
-    <main:v>2</main:v>
-  </main:c>
-  <main:c r="D1">
-    <main:v>123456789</main:v>
-  </main:c>
-</xml-fragment>]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- providingblankUserName -->
-        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@514646ef]" started-at="2022-12-01T20:51:46 IST" name="tearDownRegisterPage" finished-at="2022-12-01T20:51:46 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownRegisterPage -->
-      </class> <!-- tests.RegisterPageTest -->
-    </test> <!-- TestChrome -->
-    <test started-at="2022-12-01T20:51:30 IST" name="TestFireFox" finished-at="2022-12-01T20:51:52 IST" duration-ms="22302">
-      <class name="tests.RegisterPageTest">
-        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@126253fd]" started-at="2022-12-01T20:51:31 IST" name="initRegisterPage" finished-at="2022-12-01T20:51:40 IST" duration-ms="9778" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initRegisterPage -->
-        <test-method signature="providingValidRegistrationData(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@126253fd]" started-at="2022-12-01T20:51:40 IST" name="providingValidRegistrationData" data-provider="RegistrationData" finished-at="2022-12-01T20:51:42 IST" duration-ms="1804" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
-  <main:c r="A1" t="s">
-    <main:v>0</main:v>
-  </main:c>
-  <main:c r="B1" s="1" t="s">
-    <main:v>1</main:v>
-  </main:c>
-  <main:c r="C1" t="s">
-    <main:v>2</main:v>
-  </main:c>
-  <main:c r="D1">
-    <main:v>123456789</main:v>
-  </main:c>
-</xml-fragment>]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- providingValidRegistrationData -->
-        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@126253fd]" started-at="2022-12-01T20:51:42 IST" name="tearDownRegisterPage" finished-at="2022-12-01T20:51:42 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownRegisterPage -->
-        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@126253fd]" started-at="2022-12-01T20:51:42 IST" name="initRegisterPage" finished-at="2022-12-01T20:51:51 IST" duration-ms="9108" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initRegisterPage -->
-        <test-method signature="providingblankUserName(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@126253fd]" started-at="2022-12-01T20:51:51 IST" name="providingblankUserName" data-provider="RegistrationData" finished-at="2022-12-01T20:51:52 IST" duration-ms="849" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
-  <main:c r="A1" t="s">
-    <main:v>3</main:v>
-  </main:c>
-  <main:c r="B1" s="1" t="s">
-    <main:v>1</main:v>
-  </main:c>
-  <main:c r="C1" t="s">
-    <main:v>2</main:v>
-  </main:c>
-  <main:c r="D1">
-    <main:v>123456789</main:v>
-  </main:c>
-</xml-fragment>]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- providingblankUserName -->
-        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@126253fd]" started-at="2022-12-01T20:51:52 IST" name="tearDownRegisterPage" finished-at="2022-12-01T20:51:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownRegisterPage -->
-      </class> <!-- tests.RegisterPageTest -->
-    </test> <!-- TestFireFox -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test1 -->
+      </class> <!-- tests.FirstPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

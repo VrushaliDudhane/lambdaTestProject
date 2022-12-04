@@ -6,9 +6,9 @@
     <classes>
       <class name="tests.RegisterPageTest">
         <methods>
-          <include name="providingblankUserName" invocation-numbers="0"/>
           <include name="initRegisterPage"/>
           <include name="tearDownRegisterPage"/>
+          <include name="withoutAcceptingTerms"/>
         </methods>
       </class> <!-- tests.RegisterPageTest -->
     </classes>
@@ -18,9 +18,9 @@
     <classes>
       <class name="tests.RegisterPageTest">
         <methods>
-          <include name="providingblankUserName" invocation-numbers="0"/>
           <include name="initRegisterPage"/>
           <include name="tearDownRegisterPage"/>
+          <include name="withoutAcceptingTerms"/>
         </methods>
       </class> <!-- tests.RegisterPageTest -->
     </classes>
